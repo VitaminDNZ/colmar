@@ -1,7 +1,40 @@
-html {
-  font-family:sans-serif;
-  font-size: 16px;
-}
-div {
+div,
+nav {
   border: 1px dotted lightblue;
+}
+/* universal styles */
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* header section: logo and top navigation */
+
+header,
+.logo,
+.logo-img,
+.logo-text,
+
+nav ul {
+  display: flex;
+}
+
+header {
+  height: 64px;
+  align-items: center;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+header,
+nav {
+  width: 100%;
+}
+
+ul {
+  justify-content: flex-end;
 }
