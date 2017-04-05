@@ -1,33 +1,72 @@
 div,
-nav {
+nav,
+img {
   border: 1px dotted lightblue;
 }
 /* universal styles */
 
 html {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 /* header section: logo and top navigation */
 
 header,
 .logo,
-.logo-img,
-.logo-text,
-
+#logo-img,
+#logo-text,
 nav ul {
   display: flex;
+  height: 64px;
 }
 
-header {
-  height: 64px;
+.logo,
+nav ul{
   align-items: center;
+}
+
+#logo-img {
+  width: 100%;
+  height: 64px;
+  margin-left: 16px;
+}
+
+#colmar,
+#academy{
+  font-family: "Cabin";
+  font-size: 1.2rem;
+}
+/* need a thinner version of this font for 'academy'*/
+
+#colmar {
+  font-weight: 600;
+}
+
+#academy {
+  font-weight: 300;
+  color: rgb(188, 188, 188);
+}
+
+.blue-line {
+  background-color: rgb(194, 237, 236);
+  width: 16px;
+  height: 64px;
+}
+
+ul {
+  justify-content: flex-end;
 }
 
 nav ul li a {
   display: inline-block;
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 16px;
 }
 
 header,
@@ -35,6 +74,59 @@ nav {
   width: 100%;
 }
 
-ul {
-  justify-content: flex-end;
+/*jumbotron styles including the action button*/
+
+.jumbotron,
+.jumbo-text,
+.btn-start,
+.flashy-words {
+  display: flex;
+}
+
+.jumbotron {
+  color: #606060;
+  font-family: "Roboto";
+}
+
+.jumbotron .image-container img {
+  width: 100%;
+}
+.jumbotron .image-container {
+  width: 60%;
+  margin-left: 24px;
+}
+
+.jumbo-text {
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto";
+  margin-left: 40px;
+  width: 63%;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.jumbo-text h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.jumbo-text h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-start {
+  padding: 8px inherit;
+  background-color: #606060;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.jumbo-text .btn-start h4 {
+  font-size: 1.5rem;
 }
