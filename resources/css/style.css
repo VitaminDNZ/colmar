@@ -26,10 +26,9 @@ nav ul{
   align-items: center;
 }
 
-#logo-img {
-  width: 100%;
-  height: 64px;
+#logo-img img{
   margin-left: 16px;
+  height: 64px;
 }
 
 #colmar,
@@ -79,31 +78,42 @@ nav {
 .jumbotron,
 .jumbo-text,
 .btn-start,
-.flashy-words {
+.right-flashy-words,
+.left-jumbo {
   display: flex;
 }
 
 .jumbotron {
   color: #606060;
   font-family: "Roboto";
+  width: auto;
+  border: 2px dotted blue;
 }
 
-.jumbotron .image-container img {
-  width: 100%;
+.left-jumbo {
+  widht: 60%;
 }
-.jumbotron .image-container {
-  width: 60%;
+
+.image-container {
+  width: 100%;
   margin-left: 24px;
 }
 
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.right-flashy-words,
 .jumbo-text {
   flex-direction: column;
   justify-content: center;
   font-family: "Roboto";
-  margin-left: 40px;
-  width: 63%;
-  margin-right: 0;
-  padding-right: 0;
+}
+
+.right-flashy-words {
+  padding-left: 40px;
 }
 
 .jumbo-text h1 {
@@ -130,3 +140,75 @@ nav {
 .jumbo-text .btn-start h4 {
   font-size: 1.5rem;
 }
+
+.jumbotron {
+  margin: 0;
+}
+
+/*main info styling*/
+.main-info,
+.left,
+.section-title,
+.right,
+.info-block,
+.list-block,
+.block-text {
+  display: flex;
+}
+
+.main-info {
+  border: 2px dotted red;
+  justify-content: space-between;
+}
+
+.right,
+.left {
+  flex-direction: column;
+}
+
+.left {
+  width:60%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.left-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-img img {
+  width: inherit;
+  height: auto;
+  border: 1px black solid;
+  overflow: hidden;
+}
+
+/* info blocks on the campus etc */
+
+.info-block {
+  width: 423px;
+  border: 1px #eee solid;
+}
+
+.block-img {
+  width: 35%;
+  margin: 16px;
+  flex-shrink: 0;
+}
+
+.block-img img {
+  width: 100%;
+}
+
+.block-text {
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
+}
+
+.info-block:last-child {
+  background-color: #eee;
+}
+
+/* Course list blocks */
