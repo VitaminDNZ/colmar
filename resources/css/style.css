@@ -212,3 +212,48 @@ nav {
 }
 
 /* Course list blocks */
+.start-learning,
+.courses,
+.course-list,
+.section-title {
+  display: flex;
+}
+
+.start-learning {
+  background-color: #eee;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-title {
+  justify-content: center;
+  margin: 16px;
+}
+
+.course-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses {
+  background-color: #fff;
+  flex-direction: column;
+  width: 30%;
+  margin: 16px;
+}
+
+.course-img {
+  width: 100%;
+}
+
+.course-img img {
+  width: 100%;
+}
+
+.courses h5 {
+  font-size: 2rem;
+}
+
+.course-text {
+  margin-left: 16px;
+}
