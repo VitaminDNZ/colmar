@@ -1,9 +1,4 @@
-div,
-nav,
-img {
-  border: 1px dotted lightblue;
-}
-/* universal styles */
+/* universal styles and text colors */
 
 html {
   font-size: 16px;
@@ -17,7 +12,8 @@ h4,
 h5,
 h6,
 p {
-  color: #4f4f4f;
+  color: #666;
+  font-family: "Muli";
 }
 
 h2 {
@@ -26,7 +22,7 @@ h2 {
 }
 
 h5 {
-  font-weight:600;
+  font-weight:700;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -45,6 +41,11 @@ h6 {
   font-size: 1.05rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.course-text h6,
+.course-text p {
+  color: #808080;
 }
 
 /* header section: logo and top navigation */
@@ -123,11 +124,10 @@ nav {
   color: #444444;
   font-family: "Muli";
   width: auto;
-  border: 2px dotted blue;
 }
 
 .left-jumbo {
-  widht: 60%;
+  width: 60%;
 }
 
 .image-container {
@@ -193,8 +193,9 @@ nav {
 }
 
 .main-info {
-  border: 2px dotted red;
+  /*border: 2px dotted red;*/
   justify-content: space-between;
+  background-color: #fffafa;
 }
 
 .right,
@@ -221,19 +222,26 @@ nav {
 .left-img img {
   width: inherit;
   height: auto;
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   overflow: hidden;
 }
+
+/* info blocks on the campus etc */
 
 .list-block .info-block:first-child  {
   margin-top: 2rem;
 }
 
-/* info blocks on the campus etc */
+.list-block .info-block:first-child  {
+  border-bottom: 1px #eee solid;
+}
+
+.main-info .list-block {
+  border: 1px #eee solid;
+}
 
 .info-block {
   width: 423px;
-  border: 1px #eee solid;
 }
 
 .block-img {
@@ -265,7 +273,7 @@ nav {
 }
 
 .start-learning {
-  background-color: #eee;
+  background-color: #e6e6e6;
   flex-direction: column;
   width: 100%;
 }
@@ -278,6 +286,7 @@ nav {
 .course-list {
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .courses {
@@ -313,6 +322,7 @@ nav {
 
 .thesis-exhibit {
   flex-direction: column;
+  background-color: #fffafa;
 }
 
 .thesis-exhibit .showcase-1 {
@@ -329,4 +339,43 @@ nav {
 
 .video-container video {
   width: 100%;
+}
+
+/*footer styling */
+.footer,
+.footer-nav,
+.copyright {
+  display: flex;
+}
+
+.footer {
+  border-top: 1px #eee solid;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer .copyright h6 {
+  font-size: .8rem;
+}
+
+.footer .footer-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+}
+
+.footer .footer-nav ul li a {
+  text-decoration: none;
+  font-size: .8rem;
+  color: #808080;
+}
+
+.footer .footer-nav ul li {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
