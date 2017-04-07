@@ -7,7 +7,44 @@ img {
 
 html {
   font-size: 16px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Muli", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #4f4f4f;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-weight:600;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.05rem;
+}
+
+a {
+  font-size: 1.05rem;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* header section: logo and top navigation */
@@ -27,8 +64,8 @@ nav ul{
 }
 
 #logo-img img{
-  margin-left: 16px;
-  height: 64px;
+  margin-left: 1rem;
+  height: 4rem;
 }
 
 #colmar,
@@ -36,7 +73,6 @@ nav ul{
   font-family: "Cabin";
   font-size: 1.2rem;
 }
-/* need a thinner version of this font for 'academy'*/
 
 #colmar {
   font-weight: 600;
@@ -84,8 +120,8 @@ nav {
 }
 
 .jumbotron {
-  color: #606060;
-  font-family: "Roboto";
+  color: #444444;
+  font-family: "Muli";
   width: auto;
   border: 2px dotted blue;
 }
@@ -109,7 +145,7 @@ nav {
 .jumbo-text {
   flex-direction: column;
   justify-content: center;
-  font-family: "Roboto";
+  font-family: "Muli";
 }
 
 .right-flashy-words {
@@ -131,14 +167,14 @@ nav {
 .btn-start {
   padding: 8px inherit;
   background-color: #606060;
-  color: white;
   font-size: 1.5rem;
   width: 100%;
   justify-content: center;
 }
 
-.jumbo-text .btn-start h4 {
+.btn-start h4 {
   font-size: 1.5rem;
+  color: white;
 }
 
 .jumbotron {
@@ -169,7 +205,12 @@ nav {
 .left {
   width:60%;
   height: auto;
-  margin: 32px 24px;
+  margin: 2rem 24px;
+  align-items: flex-start;
+}
+
+.left .section-title {
+  margin-left: 0;
 }
 
 .left-img {
@@ -182,6 +223,10 @@ nav {
   height: auto;
   border: 1px black solid;
   overflow: hidden;
+}
+
+.list-block .info-block:first-child  {
+  margin-top: 2rem;
 }
 
 /* info blocks on the campus etc */
@@ -238,7 +283,7 @@ nav {
 .courses {
   background-color: #fff;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
   margin: 16px;
 }
 
@@ -256,4 +301,32 @@ nav {
 
 .course-text {
   margin-left: 16px;
+  margin-bottom: 24px;
+  padding-right: 2rem;
+}
+
+/*Thesis Exhibit section */
+.thesis-exhibit,
+.section-content {
+  display: flex;
+}
+
+.thesis-exhibit {
+  flex-direction: column;
+}
+
+.thesis-exhibit .showcase-1 {
+  background-color: #eee;
+}
+
+.thesis-exhibit .showcase-2 {
+  background-color: inherit;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.video-container video {
+  width: 100%;
 }
