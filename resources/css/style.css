@@ -351,6 +351,7 @@ nav {
   }
   .info-block {
     flex-direction: column;
+    margin-bottom: 16px;
   }
   #guest {
     background-color: #fffafa;
@@ -446,6 +447,10 @@ nav {
     background-color: #fffafa;
     border-top: 1px solid #eee;
   }
+
+  .section-title-mobile {
+    display: inline-flex;
+  }
 }
 
 /*Thesis Exhibit section */
@@ -493,6 +498,16 @@ nav {
   align-items: center;
 }
 
+.thesis-exhibit .section-content .right,
+.thesis-exhibit .section-content .left h5,
+.thesis-exhibit .section-content .left p {
+  display: none;
+}
+
+.thesis-exhibit .section-content .left {
+  width: 100%;
+}
+
 }
 
 /*footer styling */
@@ -532,4 +547,22 @@ nav {
   display: inline-block;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer .footer-nav {
+    display: none;
+  }
+
+  .footer .copyright h6 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    border: 1px solid red;
+  }
+
+  .footer {
+    padding-top: 0;
+    margin-bottom: 0;
+
+  }
 }
