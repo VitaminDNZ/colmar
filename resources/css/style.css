@@ -23,17 +23,22 @@ h2 {
 
 h5 {
   font-weight:700;
-  font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 1.05rem;
+  font-size: 0.85rem;
+}
+
+.section-text p,
+.video-text {
+  font-size: 0.95rem;
 }
 
 a {
-  font-size: 1.05rem;
+  font-size: 0.85rem;
 }
 
 h6 {
@@ -72,7 +77,7 @@ nav ul{
 #colmar,
 #academy{
   font-family: "Cabin";
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 #colmar {
@@ -110,6 +115,24 @@ nav {
   width: 100%;
 }
 
+#mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #desktop-nav,
+  .logo {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+}
+
 /*jumbotron styles including the action button*/
 
 .jumbotron,
@@ -123,7 +146,7 @@ nav {
 .jumbotron {
   color: #444444;
   font-family: "Muli";
-  width: auto;
+  width: 100%;
 }
 
 .left-jumbo {
@@ -131,15 +154,14 @@ nav {
 }
 
 .image-container {
-  width: 100%;
   margin-left: 24px;
+  width: 100%;
 }
 
 .image-container img {
-  width: 100%;
+  width: inherit;
   height: auto;
 }
-
 
 .right-flashy-words,
 .jumbo-text {
@@ -149,6 +171,8 @@ nav {
 }
 
 .right-flashy-words {
+  width: 40%;
+  padding-right: 80px;
   padding-left: 40px;
 }
 
@@ -165,10 +189,9 @@ nav {
 }
 
 .btn-start {
-  padding: 8px inherit;
   background-color: #606060;
   font-size: 1.5rem;
-  width: 100%;
+  width: 95%;
   justify-content: center;
 }
 
@@ -179,6 +202,27 @@ nav {
 
 .jumbotron {
   margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  #place-holder {
+    background-color: #606060;
+    height: 180px;
+  }
+
+  .left-jumbo {
+    display: none;
+  }
+  .right-flashy-words {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 16px;
+    align-items: center;
+  }
+  .btn-start {
+    margin-right: 16px;
+  }
 }
 
 /*main info styling*/
@@ -222,11 +266,41 @@ nav {
 .left-img img {
   width: inherit;
   height: auto;
-  /*border: 1px black solid;*/
-  overflow: hidden;
 }
 
+.name {
+  font-size: .9rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-info .left {
+    display: none;
+  }
+
+  .main-info .right .info-block {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main-info{
+    justify-content: center;
+  }
+
+  .main-info .right {
+    width: 100%;
+  }
+
+  .list-block .block-text {
+    width: 100%;
+    margin-left: 32px;
+  }
+}
 /* info blocks on the campus etc */
+
+.block-img-mobile {
+  display: none;
+}
 
 .list-block .info-block:first-child  {
   margin-top: 2rem;
@@ -262,6 +336,27 @@ nav {
 
 .info-block:last-child {
   background-color: #eee;
+}
+
+@media only screen and (max-width: 480px) {
+  .block-img {
+    display: none;
+  }
+  .block-img-mobile {
+    display: block;
+    width: 95%
+  }
+  .block-img-mobile img {
+    width: 100%;
+  }
+  .info-block {
+    flex-direction: column;
+  }
+  #guest {
+    background-color: #fffafa;
+    margin-bottom: 32px;
+  }
+
 }
 
 /* Course list blocks */
@@ -304,14 +399,53 @@ nav {
   width: 100%;
 }
 
-.courses h5 {
-  font-size: 2rem;
-}
-
 .course-text {
   margin-left: 16px;
   margin-bottom: 24px;
   padding-right: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .course-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courses {
+    width: 95%;
+    margin-bottom: 8px;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .course-img {
+    display: none;
+  }
+
+  .course-text h6,
+  .course-text p {
+    display: none;
+  }
+
+  .course-text h5 {
+    margin: 0;
+  }
+
+  .course-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+  }
+
+  .courses {
+    background-color: #eee;
+    /* color for background of section #fffafa */
+  }
+
+  .start-learning {
+    background-color: #fffafa;
+    border-top: 1px solid #eee;
+  }
 }
 
 /*Thesis Exhibit section */
@@ -339,6 +473,26 @@ nav {
 
 .video-container video {
   width: 100%;
+}
+
+.section-title-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+.section-title {
+  display: none;
+}
+
+.section-title-mobile {
+  display: flex;
+}
+
+.thesis-exhibit {
+  align-items: center;
+}
+
 }
 
 /*footer styling */
