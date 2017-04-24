@@ -374,8 +374,9 @@ nav {
   width: 100%;
 }
 
-.section-title {
+.start-learning .section-title {
   justify-content: center;
+  display: inline-flex;
   margin: 16px;
 }
 
@@ -506,6 +507,8 @@ nav {
 
 .thesis-exhibit .section-content .left {
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 }
@@ -557,7 +560,6 @@ nav {
   .footer .copyright h6 {
     margin-bottom: 16px;
     margin-top: 16px;
-    border: 1px solid red;
   }
 
   .footer {
